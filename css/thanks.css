@@ -43,7 +43,8 @@ body, html {
 .thanks-page__main-page-link {
   width: 240px;
   height: 64px;
-  padding: 15px 55px;
+  padding: 15px 0;
+  text-align: center;
   box-shadow: 1px 2px 32px rgba(251, 177, 67, 0.3), inset 1px 2px 0 #ffffff;
   border-radius: 32px;
   border: 1px solid #ffdca8;
