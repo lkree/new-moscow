@@ -416,7 +416,7 @@ $(document).ready(function() {
         $('.fair').fadeIn(400);
     });
     $('.sales__btn').click(function (e) {
-        window.oldpup = '/thanks.html?referrer=oldpup';
+        window.oldpup = '/thanks.html?referrer=prevpup';
         $('#exampleModal').arcticmodal({
             afterClose: function(data, el) {
                 $('.form-img').fadeOut(400)

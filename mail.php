@@ -1,7 +1,10 @@
 <?php
 
-function sendEmailPopup() {
-  $to = "support@odobri.online";
+$__EMAILS__ = ["support@odobri.online", 
+               "manager@odobri.online",
+               "ceo@garnet.house"];
+
+function sendEmailPopup($to) {
   $subject = "Заявка с сайта Москва Дорогая"; 
   $message = getPopupData();
   $headers = "Content-type: text/html; charset=utf-8 \r\n"; 
@@ -32,6 +35,9 @@ function getPopupData() {
   return $dataToWrite;
 }
 
-sendEmailPopup();
+foreach($__EMAILS__ as $k => $v) {
+  sendEmailPopup($v);
+}
+
 writeDataToTxt();
 ?>
