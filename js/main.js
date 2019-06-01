@@ -530,7 +530,7 @@ $(document).ready(function() {
                     var $formId = $(form).attr('id');
                     switch ($formId) {
                         // Если у формы id="popupResult" - делаем:
-                        case 'form1':
+                      case 'form1':
                             $.ajax({
                                 type: 'POST',
                                 url: $form.attr('action'),
@@ -538,45 +538,27 @@ $(document).ready(function() {
                             })
                                 .always(function(response) {
                                     setTimeout(function() {
-                                        $('#loader').fadeOut();
-                                    }, 800);
-                                    setTimeout(function() {
-                                        $('#overlay').fadeIn();
-                                        $form.trigger('reset');
-                                        //строки для остлеживания целей в Я.Метрике и Google Analytics
-                                    }, 1100);
-                                    $('#overlay').on('click', function(e) {
-                                        $(this).fadeOut();
-                                        link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
-                                        window.oldpup = undefined;
-                                        location.assign(link);
-                                    });
-
+                                      link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
+                                      window.oldpup = undefined;
+                                      $form.trigger('reset');
+                                      location.assign(link);
+                                    },1000);
                                 });
-                            break;
+                                break;
                         case 'form2':
                             $.ajax({
                                 type: 'POST',
                                 url: $form.attr('action'),
                                 data: $form.serialize(),
                             })
-                                .always(function(response) {
-                                    setTimeout(function() {
-                                        $('#loader').fadeOut();
-                                    }, 800);
-                                    setTimeout(function() {
-                                        $('#overlay').fadeIn();
-                                        $form.trigger('reset');
-                                        //строки для остлеживания целей в Я.Метрике и Google Analytics
-                                    }, 1100);
-                                    $('#overlay').on('click', function(e) {
-                                        $(this).fadeOut();
-                                        link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
-                                        window.oldpup = undefined;
-                                        location.assign(link);
-                                    });
-
-                                });
+                              .always(function(response) {
+                                setTimeout(function() {
+                                  link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
+                                  window.oldpup = undefined;
+                                  $form.trigger('reset');
+                                  location.assign(link);
+                                },1000);
+                              });
                             break;
                         case 'form3':
                             $.ajax({
@@ -584,23 +566,14 @@ $(document).ready(function() {
                                 url: $form.attr('action'),
                                 data: $form.serialize(),
                             })
-                                .always(function(response) {
-                                    setTimeout(function() {
-                                        $('#loader').fadeOut();
-                                    }, 800);
-                                    setTimeout(function() {
-                                        $('#overlay').fadeIn();
-                                        $form.trigger('reset');
-                                        //строки для остлеживания целей в Я.Метрике и Google Analytics
-                                    }, 1100);
-                                    $('#overlay').on('click', function(e) {
-                                        $(this).fadeOut();
-                                        link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
-                                        window.oldpup = undefined;
-                                        location.assign(link);
-                                    });
-
-                                });
+                              .always(function(response) {
+                                setTimeout(function() {
+                                  link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
+                                  window.oldpup = undefined;
+                                  $form.trigger('reset');
+                                  location.assign(link);
+                                },1000);
+                              });
                             break;
                         case 'form4':
                             $.ajax({
@@ -608,23 +581,14 @@ $(document).ready(function() {
                                 url: $form.attr('action'),
                                 data: $form.serialize(),
                             })
-                                .always(function(response) {
-                                    setTimeout(function() {
-                                        $('#loader').fadeOut();
-                                    }, 800);
-                                    setTimeout(function() {
-                                        $('#overlay').fadeIn();
-                                        $form.trigger('reset');
-                                        //строки для остлеживания целей в Я.Метрике и Google Analytics
-                                    }, 1100);
-                                    $('#overlay').on('click', function(e) {
-                                        $(this).fadeOut();
-                                        link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
-                                        window.oldpup = undefined;
-                                        location.assign(link);
-                                    });
-
-                                });
+                              .always(function(response) {
+                                setTimeout(function() {
+                                  link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
+                                  window.oldpup = undefined;
+                                  $form.trigger('reset');
+                                  location.assign(link);
+                                },1000);
+                              });
                             break;
                         case 'form5':
                             $.ajax({
@@ -632,23 +596,14 @@ $(document).ready(function() {
                                 url: $form.attr('action'),
                                 data: $form.serialize(),
                             })
-                                .always(function(response) {
-                                    setTimeout(function() {
-                                        $('#loader').fadeOut();
-                                    }, 800);
-                                    setTimeout(function() {
-                                        $('#overlay').fadeIn();
-                                        $form.trigger('reset');
-                                        //строки для остлеживания целей в Я.Метрике и Google Analytics
-                                    }, 1100);
-                                    $('#overlay').on('click', function(e) {
-                                        $(this).fadeOut();
-                                        link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
-                                        window.oldpup = undefined;
-                                        location.assign(link);
-                                    });
-
-                                });
+                              .always(function(response) {
+                                setTimeout(function() {
+                                  link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
+                                  window.oldpup = undefined;
+                                  $form.trigger('reset');
+                                  location.assign(link);
+                                },1000);
+                              });
                             break;
                         case 'form6':
                             $.ajax({
@@ -656,23 +611,14 @@ $(document).ready(function() {
                                 url: $form.attr('action'),
                                 data: $form.serialize(),
                             })
-                                .always(function(response) {
-                                    setTimeout(function() {
-                                        $('#loader').fadeOut();
-                                    }, 800);
-                                    setTimeout(function() {
-                                        $('#overlay').fadeIn();
-                                        $form.trigger('reset');
-                                        //строки для остлеживания целей в Я.Метрике и Google Analytics
-                                    }, 1100);
-                                    $('#overlay').on('click', function(e) {
-                                        $(this).fadeOut();
-                                        link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
-                                        window.oldpup = undefined;
-                                        location.assign(link);
-                                    });
-
-                                });
+                              .always(function(response) {
+                                setTimeout(function() {
+                                  link = window.oldpup ? oldpup : '/thanks.html?referrer=default';
+                                  window.oldpup = undefined;
+                                  $form.trigger('reset');
+                                  location.assign(link);
+                                },1000);
+                              });
                             break;
                     }
                     return false;
